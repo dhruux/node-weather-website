@@ -11,7 +11,12 @@ const forecast = (address,callback)=>{
         callback('unable to find the location',undefined)
     }
     else{
-        callback(undefined,'It will be '+ body.current.condition.text+' today.It is currently ' + body.current.temp_c+ ' degrees out and There is a ' + body.current.precip_mm+'% chance of rain')
+       // const location1 = ;
+        //const forecastdata1 ='It will be '+ body.current.condition.text+' today.It is currently ' + body.current.temp_c+ ' degrees out and There is a ' + body.current.precip_mm+'% chance of rain';
+        callback(undefined,{
+            location : body.location.name+',' + body.location.region +',' + body.location.country,
+            forecastdata: 'It will be '+ body.current.condition.text+' today.It is currently ' + body.current.temp_c+ ' degrees out and There is a ' + body.current.precip_mm+'% chance of rain'
+        })
     }
 })
 }
