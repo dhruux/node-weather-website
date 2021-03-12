@@ -10,13 +10,18 @@ body{
 }
 .maincontent{
     flex-grow: 1;
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 footer{
-    color: #888888;
+    color: #0f0f0f;
     border-top:1px solid #eeeeee;
     margin-top: 16px;
     padding:16px 0;
+    font-weight: 600;
 }
 
 header{
@@ -24,7 +29,7 @@ header{
     margin-bottom: 48px;
 }
 h1{
-    font-size: 64px;
+    font-size: 48px;
     margin-bottom: 16px;
 }
 header a{
@@ -48,4 +53,10 @@ button{
     background: #888888;
     color: white;
     padding: 8px;
+}
+.maincontent{
+    background-color: #fff;
+}
+body {
+  background-image: url('../img/background.jpg');
 }
